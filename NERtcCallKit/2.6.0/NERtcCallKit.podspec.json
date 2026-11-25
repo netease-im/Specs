@@ -1,0 +1,116 @@
+{
+  "name": "NERtcCallKit",
+  "summary": "Netease XKit",
+  "homepage": "http://netease.im",
+  "license": {
+    "type": "Copyright",
+    "text": " Copyright 2022 Netease "
+  },
+  "authors": "yunxin engineering department",
+  "version": "2.6.0",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": [
+    "5.0"
+  ],
+  "pod_target_xcconfig": {
+    "BUILD_LIBRARY_FOR_DISTRIBUTION": "YES",
+    "APPLICATION_EXTENSION_API_ONLY": "NO",
+    "OTHER_LDFLAGS": "$(inherited) -Wl,-dead_strip_dylibs"
+  },
+  "source": {
+    "http": "https://yx-web-nosdn.netease.im/xkit/NERtcCallKit/2.6.0/NERtcCallKit_iOS_v2.6.0.xcframework.zip?download=NERtcCallKit_iOS_v2.6.0.xcframework.zip",
+    "sha256": "8c6ea6690738ca6f0d7437f7cd425e26e0139c99ec736d46d7d6cf0045b4e44f"
+  },
+  "default_subspecs": "NOS",
+  "subspecs": [
+    {
+      "name": "NOS",
+      "vendored_frameworks": "NERtcCallKit.xcframework",
+      "dependencies": {
+        "NIMSDK_LITE": [
+          "9.17.0"
+        ],
+        "NERtcSDK/RtcBasic": [
+          "5.9.10"
+        ],
+        "NECoreKit": [
+          "9.8.4"
+        ],
+        "NECommonKit": [
+          "9.7.8"
+        ],
+        "YXAlog": [
+          "2.0.0"
+        ]
+      }
+    },
+    {
+      "name": "FCS",
+      "vendored_frameworks": "NERtcCallKit.xcframework",
+      "dependencies": {
+        "NIMSDK_LITE/FCS": [
+          "9.17.0"
+        ],
+        "NERtcSDK/RtcBasic": [
+          "5.9.10"
+        ],
+        "NECoreKit": [
+          "9.8.4"
+        ],
+        "NECommonKit": [
+          "9.7.8"
+        ],
+        "YXAlog": [
+          "2.0.0"
+        ]
+      }
+    },
+    {
+      "name": "NOS_Special",
+      "vendored_frameworks": "NERtcCallKit.xcframework",
+      "dependencies": {
+        "NIMSDK_LITE": [
+          ">= 9.17.0",
+          "< 10.0"
+        ],
+        "NERtcSDK/RtcBasic": [
+          "5.9.10"
+        ],
+        "NECoreKit": [
+          ">= 9.8.4"
+        ],
+        "NECommonKit": [
+          ">= 9.7.8"
+        ],
+        "YXAlog": [
+          ">= 2.0.0"
+        ]
+      }
+    },
+    {
+      "name": "FCS_Special",
+      "vendored_frameworks": "NERtcCallKit.xcframework",
+      "dependencies": {
+        "NIMSDK_LITE/FCS": [
+          ">= 9.17.0",
+          "< 10.0"
+        ],
+        "NERtcSDK/RtcBasic": [
+          "5.9.10"
+        ],
+        "NECoreKit": [
+          ">= 9.8.4"
+        ],
+        "NECommonKit": [
+          ">= 9.7.8"
+        ],
+        "YXAlog": [
+          ">= 2.0.0"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}
