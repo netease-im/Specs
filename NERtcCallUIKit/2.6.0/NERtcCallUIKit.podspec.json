@@ -1,0 +1,114 @@
+{
+  "name": "NERtcCallUIKit",
+  "summary": "Netease XKit",
+  "homepage": "http://netease.im",
+  "license": {
+    "type": "Copyright",
+    "text": " Copyright 2022 Netease "
+  },
+  "authors": "yunxin engineering department",
+  "version": "2.6.0",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": [
+    "5.0"
+  ],
+  "pod_target_xcconfig": {
+    "BUILD_LIBRARY_FOR_DISTRIBUTION": "YES",
+    "APPLICATION_EXTENSION_API_ONLY": "NO",
+    "OTHER_LDFLAGS": "$(inherited) -Wl,-dead_strip_dylibs"
+  },
+  "source": {
+    "http": "https://yx-web-nosdn.netease.im/xkit/NERtcCallKit/2.6.0/NERtcCallUIKit_iOS_v2.6.0.xcframework.zip?download=NERtcCallUIKit_iOS_v2.6.0.xcframework.zip",
+    "sha256": "47d311f042080655ac836fee6fc7faee3c5746d29487bc74a6a5e5eda7002652"
+  },
+  "default_subspecs": "NOS",
+  "subspecs": [
+    {
+      "name": "NOS",
+      "vendored_frameworks": "NERtcCallUIKit.xcframework",
+      "dependencies": {
+        "NERtcCallKit/NOS": [
+          "2.6.0"
+        ],
+        "SDWebImage": [
+          "5.15.4"
+        ],
+        "NECoreKit": [
+          "9.8.4"
+        ],
+        "NECommonKit": [
+          "9.7.8"
+        ],
+        "NECommonUIKit": [
+          "9.8.5"
+        ]
+      }
+    },
+    {
+      "name": "FCS",
+      "vendored_frameworks": "NERtcCallUIKit.xcframework",
+      "dependencies": {
+        "NERtcCallKit/FCS": [
+          "2.6.0"
+        ],
+        "SDWebImage": [
+          "5.15.4"
+        ],
+        "NECoreKit": [
+          "9.8.4"
+        ],
+        "NECommonKit": [
+          "9.7.8"
+        ],
+        "NECommonUIKit": [
+          "9.8.5"
+        ]
+      }
+    },
+    {
+      "name": "NOS_Special",
+      "vendored_frameworks": "NERtcCallUIKit.xcframework",
+      "dependencies": {
+        "NERtcCallKit/NOS_Special": [
+          "2.6.0"
+        ],
+        "SDWebImage": [
+          ">= 5.15.4"
+        ],
+        "NECoreKit": [
+          ">= 9.8.4"
+        ],
+        "NECommonKit": [
+          ">= 9.7.8"
+        ],
+        "NECommonUIKit": [
+          ">= 9.8.5"
+        ]
+      }
+    },
+    {
+      "name": "FCS_Special",
+      "vendored_frameworks": "NERtcCallUIKit.xcframework",
+      "dependencies": {
+        "NERtcCallKit/FCS_Special": [
+          "2.6.0"
+        ],
+        "SDWebImage": [
+          ">= 5.15.4"
+        ],
+        "NECoreKit": [
+          ">= 9.8.4"
+        ],
+        "NECommonKit": [
+          ">= 9.7.8"
+        ],
+        "NECommonUIKit": [
+          ">= 9.8.5"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}
